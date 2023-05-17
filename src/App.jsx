@@ -7,6 +7,7 @@ const App = () => {
       <div className="m-0 bg-base-200 min-h-screen">
         <Navbar />
         <Hero />
+        <div className="h-[90vh]"></div>
       </div>
     </>
   );

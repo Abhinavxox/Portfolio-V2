@@ -7,5 +7,10 @@ export default {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+
+  // daisyUI config (optional)
+  daisyui: {
+    themes: ["light", "dark"],
+  },
 };

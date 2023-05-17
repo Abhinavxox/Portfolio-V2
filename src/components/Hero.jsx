@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="w-[90%] rounded-[2rem] bg-base-100 m-4">
         <div className="hero bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
-            <div className="lg:max-w-xl rounded-lg shadow-2xl overflow-hidden">
+            <div className="lg:max-w-3xl rounded-lg shadow-2xl overflow-hidden">
               <animated.img
                 src="/images/abhinav.jpg"
                 className="w-full h-auto"

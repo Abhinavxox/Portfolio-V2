@@ -1,4 +1,5 @@
 import BlogsHero from "./components/BlogsHero";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProjectsHero from "./components/ProjectsHero";
@@ -13,6 +14,7 @@ const App = () => {
         <Timeline />
         <ProjectsHero />
         <BlogsHero />
+        <Footer />
       </div>
     </>
   );

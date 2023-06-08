@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../layouts/Card";
 
 const ProjectsHero = () => {
   return (
@@ -8,57 +9,26 @@ const ProjectsHero = () => {
         <div className="h-2 w-1/4 bg-gray-400 rounded-[10rem]"></div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="flex justify-center px-5">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src="/images/abhinav.jpg" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Project</h2>
-              <p className="truncate ...">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Magnam, beatae at illum iste quis vero ullam quo, animi
-                reiciendis quam id commodi dolores, consectetur aut optio
-                eveniet? Iste, ipsa nobis.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center px-5">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src="/images/abhinav.jpg" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Project</h2>
-              <p className="truncate ...">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Magnam, beatae at illum iste quis vero ullam quo, animi
-                reiciendis quam id commodi dolores, consectetur aut optio
-                eveniet? Iste, ipsa nobis.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center px-5">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src="/images/abhinav.jpg" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Project</h2>
-              <p className="truncate ...">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Magnam, beatae at illum iste quis vero ullam quo, animi
-                reiciendis quam id commodi dolores, consectetur aut optio
-                eveniet? Iste, ipsa nobis.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Card
+          image="/images/abhinav.jpg"
+          title="Project 1"
+          description="Project 1 descp"
+        />
+        <Card
+          image="/images/abhinav.jpg"
+          title="Project 1"
+          description="Project 1 descp"
+        />
+        <Card
+          image="/images/abhinav.jpg"
+          title="Project 1"
+          description="Project 1 descp"
+        />
       </div>
       <div className="flex justify-center py-5">
-        <button className="btn btn-primary">View More</button>
+        <button className="btn btn-primary hover:scale-105 transition-transform duration-30">
+          View More Projects
+        </button>
       </div>
     </div>
   );

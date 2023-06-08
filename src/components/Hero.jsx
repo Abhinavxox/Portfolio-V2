@@ -14,6 +14,11 @@ const Hero = () => {
     config: { duration: 1000 },
   });
 
+  const handleDownloadCV = () => {
+    const pdfUrl = "/resume/Resume.pdf";
+    window.open(pdfUrl, "_blank");
+  };
+
   return (
     <div className="w-full flex justify-center">
       <div className="w-[90%] rounded-[2rem] bg-base-100 m-4">
@@ -39,7 +44,9 @@ const Hero = () => {
                 Fullstack Developer | Musician | Philanthropist
               </p>
               <div className="flex justify-center w-full my-5">
-                <button className="btn btn-primary">Download CV</button>
+                <button className="btn btn-primary" onClick={handleDownloadCV}>
+                  Download CV
+                </button>
               </div>
             </animated.div>
           </div>

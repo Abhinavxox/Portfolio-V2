@@ -86,7 +86,10 @@ const Timeline = () => {
             </ol>
           </div>
           <div className="flex justify-center py-5">
-            <button className="btn btn-primary">View Full Timeline</button>
+            <Link to="/about">
+              {" "}
+              <button className="btn btn-primary">View Full Timeline</button>
+            </Link>
           </div>
         </div>
       </animated.div>

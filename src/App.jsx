@@ -1,20 +1,26 @@
-import BlogsHero from "./components/BlogsHero";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import ProjectsHero from "./components/ProjectsHero";
-import Timeline from "./components/Timeline";
+import BlogsProjectsPage from "./pages/BlogsProjectsPage";
 
 const App = () => {
   return (
     <>
       <div className="m-0 bg-base-200 min-h-screen">
         <Navbar />
-        <Hero />
-        <Timeline />
-        <ProjectsHero />
-        <BlogsHero />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/blogs"
+            element={<BlogsProjectsPage content="blogs" />}
+          />
+          <Route
+            path="/projects"
+            element={<BlogsProjectsPage content="projects" />}
+          />
+        </Routes>
       </div>
     </>
   );

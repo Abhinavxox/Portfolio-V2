@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../layouts/Card";
 import { useSpring, animated } from "@react-spring/web";
+import { Link } from "react-router-dom";
 
 const ProjectsHero = () => {
   const trailProps = useSpring({
@@ -42,9 +43,11 @@ const ProjectsHero = () => {
           />
         </div>
         <div className="flex justify-center py-5">
-          <button className="btn btn-primary hover:scale-105 transition-transform duration-30">
-            View More Projects
-          </button>
+          <Link to="/projects">
+            <button className="btn btn-primary hover:scale-105 transition-transform duration-30">
+              View More Projects
+            </button>
+          </Link>
         </div>
       </div>
     </animated.div>

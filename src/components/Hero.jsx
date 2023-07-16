@@ -1,15 +1,15 @@
 import { useSpring, animated } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
-  const trailProps = useSpring({
-    from: { opacity: 0, transform: "translateY(50px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    config: { duration: 1000 },
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
-  const imageProps = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+  const trailProps = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateY(0)" : "translateY(50px)",
     config: { duration: 1000 },
   });
 
@@ -25,10 +25,11 @@ const Hero = () => {
           <div className="hero-content flex-col lg:flex-row">
             <div className="lg:max-w-3xl rounded-lg shadow-2xl overflow-hidden">
               <animated.img
+                ref={ref}
                 src="/images/abhinav.jpg"
                 className="w-full h-auto"
                 alt="Abhinav Pandey"
-                style={imageProps}
+                style={trailProps}
               />
             </div>
             <animated.div

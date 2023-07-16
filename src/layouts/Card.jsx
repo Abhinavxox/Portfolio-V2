@@ -1,4 +1,3 @@
-/* eslint-disable */
 const Card = (props) => {
   return (
     <div className="flex justify-center px-5">

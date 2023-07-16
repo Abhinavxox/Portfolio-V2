@@ -1,0 +1,45 @@
+[
+    {
+        "image": "/projects/emojiTranslator.png",
+        "title": "Emoji-Translator Android App",
+        "meta-description": "Flutter-based Android app that converts text to emojis",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+      },
+    {
+      "image": "/projects/rmssystem.png",
+      "title": "Railway Management System",
+      "meta-description": "JAVA swing app used to implement data structures in daily life",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    },
+    {
+      "image": "/projects/nand2tetris.png",
+      "title": "Nand2Tetris Project",
+      "meta-description": "Made Assembler, VM Translator, Syntax Analyzer, and Compiler for HACK and binary conversion",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    },
+    {
+      "image": "/projects/khms.png",
+      "title": "Kitchen Hazard Management System",
+      "meta-description": "Implemented LPG and Temperature detection system in Tinkercad and LTSpice",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    },
+    {
+      "image": "/projects/whack.png",
+      "title": "Whack-a-Mole",
+      "meta-description": "Classic whack-a-mole game made using vanilla JS",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    },
+    {
+      "image": "/projects/quickBill.png",
+      "title": "Quick-Bill",
+      "meta-description": "Desktop app made in JAVA SWING using MVC framework and SQL connectivity",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    },
+    {
+      "image": "/projects/rayban-ecommerce.png",
+      "title": "Rayban Ecommerce Website",
+      "meta-description": "Used Spring Boot framework and SQL database to create a simple functioning website which also features user data saving and checkout",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+    }
+  ]
+  

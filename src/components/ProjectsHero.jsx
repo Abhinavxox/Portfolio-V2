@@ -1,23 +1,25 @@
-import React from "react";
 import Card from "../layouts/Card";
 import { useSpring, animated } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
+
 import { Link } from "react-router-dom";
 
 const ProjectsHero = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   const trailProps = useSpring({
-    from: { opacity: 0, transform: "translateY(50px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
+    opacity: inView ? 1 : 0,
+    transform: inView ? "translateY(0)" : "translateY(50px)",
     config: { duration: 1000 },
   });
 
-  const imageProps = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 1000 },
-  });
   return (
     <animated.div
       style={trailProps}
+      ref={ref}
       className="flex flex-col justify-center px-8 py-4 text-center lg:text-left"
     >
       <div className="mx-auto py-10">

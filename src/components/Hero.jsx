@@ -1,4 +1,3 @@
-import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 const Hero = () => {
@@ -38,10 +37,10 @@ const Hero = () => {
             >
               <h1 className="text-5xl font-bold">Abhinav Pandey</h1>
               <p className="py-6 text-xl">
-                I'm a MERN stack developer from Nepal.
+                I&apos;m a MERN stack developer from Nepal.
               </p>
               <p className="text-lg">
-                Fullstack Developer | Musician | Philanthropist
+                Fullstack Developer | Musician | Open-Source Enthusiast
               </p>
               <div className="flex justify-center w-full my-5">
                 <button className="btn btn-primary" onClick={handleDownloadCV}>

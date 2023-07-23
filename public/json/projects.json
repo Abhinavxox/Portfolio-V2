@@ -1,45 +1,97 @@
 [
-    {
-        "image": "/projects/emojiTranslator.png",
-        "title": "Emoji-Translator Android App",
-        "meta-description": "Flutter-based Android app that converts text to emojis",
-        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-      },
-    {
-      "image": "/projects/rmssystem.png",
-      "title": "Railway Management System",
-      "meta-description": "JAVA swing app used to implement data structures in daily life",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    },
-    {
-      "image": "/projects/nand2tetris.png",
-      "title": "Nand2Tetris Project",
-      "meta-description": "Made Assembler, VM Translator, Syntax Analyzer, and Compiler for HACK and binary conversion",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    },
-    {
-      "image": "/projects/khms.png",
-      "title": "Kitchen Hazard Management System",
-      "meta-description": "Implemented LPG and Temperature detection system in Tinkercad and LTSpice",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    },
-    {
-      "image": "/projects/whack.png",
-      "title": "Whack-a-Mole",
-      "meta-description": "Classic whack-a-mole game made using vanilla JS",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    },
-    {
-      "image": "/projects/quickBill.png",
-      "title": "Quick-Bill",
-      "meta-description": "Desktop app made in JAVA SWING using MVC framework and SQL connectivity",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    },
-    {
-      "image": "/projects/rayban-ecommerce.png",
-      "title": "Rayban Ecommerce Website",
-      "meta-description": "Used Spring Boot framework and SQL database to create a simple functioning website which also features user data saving and checkout",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
-    }
-  ]
-  
+  {
+    "image": "/projects/rayban-ecommerce.png",
+    "title": "HamroKinmel Ecommerce Web Application",
+    "description": "HamroKinmel is an ecommerce web application developed using the MERN stack with Redux for state management, following the MVC (Model-View-Controller) architecture. The project incorporates models such as admin, cart, and product, which handle data storage and manipulation. Middleware functions are utilized for various purposes, including user authentication and session management, data validation, and error handling. The application employs packages like cookie-parser for parsing cookies, bcryptjs for encrypting passwords, and jsonwebtoken for generating and verifying tokens. Error handlers are implemented to gracefully handle and respond to any encountered errors, providing a smooth user experience. With the integration of proper MVC structure, middleware, and error handling mechanisms, HamroKinmel ensures efficient data flow, security, and robustness throughout the web application.",
+    "meta-description": "HamroKinmel is an ecommerce web application developed using the MERN stack with Redux for state management, following the MVC (Model-View-Controller) architecture. The project incorporates models such as admin, cart, and product, which handle data storage and manipulation. Middleware functions are utilized for various purposes, including user authentication and session management, data validation, and error handling.",
+    "link": "https://github.com/Abhinavxox/HamroKinmel",
+    "techstack": [
+      "MERN stack",
+      "Redux",
+      "MVC Architecture",
+      "cookie-parser",
+      "bcryptjs",
+      "jsonwebtoken"
+    ]
+  },
+  {
+    "image": "/projects/rayban-ecommerce.png",
+    "title": "Grocery Management System",
+    "description": "Grocery Management System is a Java Swing application built with an MVC architecture and MySQL connectivity. It serves as a billing system for a grocery store, featuring three roles: customer, cashier, and supplier. Customers can add items to their cart, cashiers can process checkouts and generate bills, and suppliers can manage stock by adding items. The system's modular design ensures efficient data manipulation, user-friendly interfaces, and seamless interaction with the MySQL database, facilitating streamlined operations and effective management of grocery store transactions.",
+    "meta-description": "Grocery Management System is a Java Swing application built with an MVC architecture and MySQL connectivity. It serves as a billing system for a grocery store, featuring three roles: customer, cashier, and supplier.",
+    "link": "https://github.com/Abhinavxox/Grocery-Management-System",
+    "techstack": ["JAVA Swing", "MySQL", "MVC"]
+  },
+  {
+    "image": "/projects/rayban-ecommerce.png",
+    "title": "Story Wizard",
+    "description": "Story Wizard is made by myself and my team CyberAmigos at Hackverse4.0, which won us the first prize of Rs.75,000. It's a user-friendly app that uses GPT-3 Turbo API, LeapAI image generation model, and Google Cloud Text-to-Speech to make storytelling engaging and fun for children. It offers a wide range of pre-made stories on various topics and allows kids to generate personalized stories based on their interests. The app also includes an interactive feature where children can ask follow-up questions about the stories and receive narrated answers.",
+    "meta-description": "Story Wizard is a user-friendly app that uses GPT-3 Turbo API, LeapAI image generation model, and Google Cloud Text-to-Speech to make storytelling engaging and fun for children. It offers pre-made and personalized stories, along with an interactive feature for follow-up questions and narrated answers.",
+    "link": "https://github.com/Abhinavxox/StoryWizard-V2",
+    "techstack": ["React", "Django", "OpenAI"]
+  },
+  {
+    "image": "/projects/rayban-ecommerce.png",
+    "title": "Software Inventory",
+    "description": "Software Inventory is a comprehensive system analyzer designed to proactively notify users of any vulnerabilities present in the dependencies utilized within their projects. Currently, the system supports Node and Python packages. By leveraging advanced scanning techniques, it identifies potential security issues and promptly alerts users, empowering them to take necessary actions to mitigate risks. Whether it's outdated packages, known vulnerabilities, or other concerns, Software Inventory serves as a valuable tool for ensuring the integrity and security of software projects.",
+    "meta-description": "Software Inventory is a comprehensive system analyzer designed to proactively notify users of vulnerabilities in Node and Python packages. It uses advanced scanning techniques to identify potential security issues and prompt alerts for risk mitigation.",
+    "link": "https://github.com/rv602/software-inventory",
+    "techstack": ["Electron js", "Next js", "Python"]
+  },
+  {
+    "image": "/projects/emojiTranslator.png",
+    "title": "Emoji-Translator Android App",
+    "meta-description": "Flutter-based Android app that converts text to emojis",
+    "techstack": ["Flutter", "Dart"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/DIcegame"
+  },
+  {
+    "image": "/projects/rmssystem.png",
+    "title": "Railway Management System",
+    "meta-description": "JAVA swing app used to implement data structures in daily life",
+    "techstack": ["JAVA", "SQL"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/Railway-Management-System"
+  },
+  {
+    "image": "/projects/nand2tetris.png",
+    "title": "Nand2Tetris Project",
+    "meta-description": "Made Assembler, VM Translator, Syntax Analyzer, and Compiler for HACK and binary conversion",
+    "techstack": ["JAVA", "Hack"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/NandToTetris"
+  },
+  {
+    "image": "/projects/khms.png",
+    "title": "Kitchen Hazard Management System",
+    "meta-description": "Implemented LPG and Temperature detection system in Tinkercad and LTSpice",
+    "techstack": ["Arduino", "LTSpice", "Tinkercad"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/Kitchen-Hazard-Management-System"
+  },
+  {
+    "image": "/projects/whack.png",
+    "title": "Whack-a-Mole",
+    "meta-description": "Classic whack-a-mole game made using vanilla JS",
+    "techstack": ["HTML", "CSS", "JS"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/Whack-a-mole/"
+  },
+  {
+    "image": "/projects/quickBill.png",
+    "title": "Quick-Bill",
+    "meta-description": "Desktop app made in JAVA SWING using MVC Architecture and SQL connectivity",
+    "techstack": ["JAVA Swing", "SQL", "MVC Architecture"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/Quick_Bill"
+  },
+  {
+    "image": "/projects/rayban-ecommerce.png",
+    "title": "Rayban Ecommerce Website",
+    "meta-description": "Used Spring Boot framework and SQL database to create a simple functioning website which also features user data saving and checkout",
+    "techstack": ["Spring Boot", "SQL", "MVC Architecture"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+    "link": "https://github.com/Abhinavxox/Quick_Bill"
+  }
+]

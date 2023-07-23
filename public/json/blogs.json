@@ -1,5 +1,17 @@
 [
-    {
-        
-    }
+  {
+    "image": "/images/blogs/hackverse.jpg",
+    "title": "How I Used ChatGPT to Win a Hackathon Worth Rs 75,000 💻💸",
+    "link": "https://meronaamabhinav.hashnode.dev/how-i-used-chatgpt-to-win-a-hackathon-worth-rs-75000"
+  },
+  {
+    "image": "/images/blogs/dualboot.jpg",
+    "title": "How to Dual Boot Ubuntu and Windows on a Single SSD without Losing Data💻",
+    "link": "https://meronaamabhinav.hashnode.dev/how-to-dual-boot-ubuntu-and-windows-on-a-single-ssd-without-losing-data"
+  },
+  {
+    "image": "/images/blogs/supportdell.jpg",
+    "title": "How Sometimes Support Assist messes up with your Dual-Booted Dell Laptop",
+    "link": "https://meronaamabhinav.hashnode.dev/how-sometimes-support-assist-messes-up-with-your-dual-booted-dell-laptop"
+  }
 ]

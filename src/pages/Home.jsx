@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className="m-0 bg-base-200 min-h-screen">
       <Hero />
-      <Timeline />
+      {/* <Timeline />
       <ProjectsHero />
-      <BlogsHero />
+      <BlogsHero /> */}
     </div>
   );
 };

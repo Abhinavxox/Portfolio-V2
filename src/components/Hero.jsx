@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center md:px-40 px-10 bg-[#2E2E35]">
       <div className="w-[90%] rounded-[2rem] bg-base-100 m-4">
         <div className="hero bg-base-200">
           <div className="hero-content flex-col lg:flex-row">

@@ -8,9 +8,4 @@ export default {
     extend: {},
   },
   plugins: [require("daisyui")],
-
-  // daisyUI config (optional)
-  daisyui: {
-    themes: ["dark"],
-  },
 };

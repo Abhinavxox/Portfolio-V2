@@ -31,3 +31,57 @@ a::before {
 a:hover::before {
   width: 100%;
 }
+
+.yellow-bar {
+  background-color: #e4aa48;
+  height: 2px;
+  width: 20%;
+}
+
+.button-new {
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #e4aa48;
+  border: 2px solid #e4aa48;
+  width: 150px;
+  height: 50px;
+  line-height: 46px;
+  letter-spacing: 0.12em;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-new:hover {
+  background-color: #e4aa48;
+  color: #2e2e35;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-a {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.hero-a:hover {
+  color: #e4aa48;
+}
+
+.hero-a:hover::before {
+  width: 0%;
+}
+
+.bg-circle {
+  padding-bottom: 62px;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  background: #121212;
+  inset: 1px;
+  margin-top: -10px;
+  z-index: -1;
+  margin-left: 55px;
+  border-radius: 100%;
+  opacity: 0.2;
+}

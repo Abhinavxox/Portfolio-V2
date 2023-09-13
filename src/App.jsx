@@ -8,7 +8,7 @@ import BlogsProjectsPage from "./pages/BlogsProjectsPage";
 const App = () => {
   return (
     <>
-      <div className="m-0 min-h-screen text-white">
+      <div className="m-0 min-h-screen text-[#DADADA]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="md:pt-20 pt-5 md:px-40 px-10 bg-[#2E2E35]">
+    <div className="md:pt-20 pt-5 xl:px-72 px-10 bg-[#2E2E35]">
       <div className="flex justify-between w-full">
         <a>
           <img src="./images/Logo.png" className="w-20" />

@@ -8,7 +8,7 @@ import BlogsProjectsPage from "./pages/BlogsProjectsPage";
 const App = () => {
   return (
     <>
-      <div className="m-0 bg-base-200 min-h-screen">
+      <div className="m-0 min-h-screen text-[#DADADA]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,7 +22,7 @@ const App = () => {
             element={<BlogsProjectsPage content="projects" />}
           />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

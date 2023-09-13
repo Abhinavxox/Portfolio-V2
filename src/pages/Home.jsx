@@ -6,7 +6,7 @@ import Timeline from "../components/Timeline";
 
 const Home = () => {
   return (
-    <div className="m-0 bg-base-200 min-h-screen">
+    <div className="m-0 min-h-screen">
       <Hero />
       {/* <Timeline />
       <ProjectsHero />

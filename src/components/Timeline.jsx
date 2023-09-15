@@ -4,16 +4,14 @@ import Services from "./Services";
 import { useInView } from "react-intersection-observer";
 
 const Timeline = () => {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const trailLeftProps = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? "translateY(0)" : "translateX(-50px)",
-    config: { duration: 1000 },
-  });
-  const trailRightProps = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateY(0)" : "translateX(50px)",
     config: { duration: 1000 },
   });
 
@@ -24,7 +22,7 @@ const Timeline = () => {
         ref={ref}
         className="w-full flex justify-center xl:py-20 py-10"
       >
-        <div className="font-medium w-1/2 text-center">
+        <div className="font-medium xl:w-1/2 w-4/5 text-center">
           <h1 className="text-[#e4aa48] my-2 text-xl">ABOUT ME</h1>
           <p className="text-3xl my-2">
             CSE-AI Student S5 | Member & Mentor at{" "}
@@ -103,7 +101,7 @@ const Timeline = () => {
         </div>
         <div className="my-10 xl:my-0">
           <h1 className="text-[#e4aa48] mt-2 text-xl font-medium text-center">
-            SERVICES
+            SERVICES & ACHIEVEMENTS
           </h1>
           <Services />
         </div>

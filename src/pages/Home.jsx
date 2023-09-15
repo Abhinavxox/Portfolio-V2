@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="m-0 bg-[#2E2E35]">
       <Hero />
-      {/* <Timeline />
-      <ProjectsHero />
+      <Timeline />
+      {/* <ProjectsHero />
       <BlogsHero /> */}
     </div>
   );

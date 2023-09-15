@@ -5,18 +5,18 @@
   display: none;
 }
 
-li {
+.yellow-list {
   list-style: none;
   display: inline-block;
 }
 
-a {
+.yellow-a {
   text-decoration: none;
   position: relative;
   padding-bottom: 0.5rem;
 }
 
-a::before {
+.yellow-a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -28,7 +28,7 @@ a::before {
   transform-origin: right;
 }
 
-a:hover::before {
+.yellow-a:hover::before {
   width: 100%;
 }
 

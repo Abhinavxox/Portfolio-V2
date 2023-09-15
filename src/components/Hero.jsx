@@ -1,5 +1,6 @@
 import { useSpring, animated } from "@react-spring/web";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -9,7 +10,7 @@ const Hero = () => {
 
   const trailProps = useSpring({
     opacity: inView ? 1 : 0,
-    transform: inView ? "translateY(0)" : "translateY(50px)",
+    transform: inView ? "translateY(0)" : "translateX(200px)",
     config: { duration: 1000 },
   });
 
@@ -19,7 +20,11 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full flex justify-between xl:px-72 px-10 h-fit pt-28">
+    <animated.div
+      style={trailProps}
+      ref={ref}
+      className="w-full flex justify-between xl:px-72 px-10 h-fit pt-28"
+    >
       <div className="xl:w-1/3 md:w-1/2 w-full">
         <div>
           <img src="./images/NameLogo.png" />
@@ -71,13 +76,18 @@ const Hero = () => {
             dolorem. Numquam aperiam sed officiis voluptate dolorem consequatur
             asperiores nobis praesentium saepe ut?
           </p>
-          <a className="text-[#e4aa48] my-2 flex items-center w-fit">
+          <Link
+            to="about"
+            smooth={true}
+            duration={1000}
+            className="text-[#e4aa48] my-2 flex items-center w-fit yellow-a"
+          >
             Learn More &nbsp;
             <i>
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 256 512"
                 height="1em"
                 width="1em"
@@ -86,10 +96,10 @@ const Hero = () => {
                 <path d="M168 345.941V44c0-6.627-5.373-12-12-12h-56c-6.627 0-12 5.373-12 12v301.941H41.941c-21.382 0-32.09 25.851-16.971 40.971l86.059 86.059c9.373 9.373 24.569 9.373 33.941 0l86.059-86.059c15.119-15.119 4.411-40.971-16.971-40.971H168z"></path>
               </svg>
             </i>
-          </a>
+          </Link>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -93,25 +93,29 @@ const Services = () => {
               </h1>
               <p className="text-center text-sm font-light my-2">
                 2 National Hackathons
-                <span className="trophies-list font-bold">
-                  <br />
-                  <a
-                    className="hero-a"
-                    href="https://devfolio.co/projects/story-wizard-4811"
-                  >
-                    Hackverse 4.0
-                  </a>
-                  <br />
-                  <a
-                    className="hero-a"
-                    href="https://www.spaceappschallenge.org/"
-                  >
-                    NASA Space Apps Challenge <br />
-                    (Regional lvl - Kathmandu)
-                  </a>
-                </span>
               </p>
             </div>
+            <motion.div className="absolute inset-0 bg-[#2e2e35] opacity-0 hover:opacity-80 transition-[all] duration-500 ease-in-out flex justify-center items-center rotate-180 px-3">
+              <span className="trophies-list font-bold w-full">
+                <a
+                  className="hero-a"
+                  href="https://devfolio.co/projects/story-wizard-4811"
+                >
+                  <p className="text-center">Hackverse 4.0</p>
+                </a>
+                <br />
+                <a
+                  className="hero-a"
+                  href="https://www.spaceappschallenge.org/"
+                >
+                  <p className="text-center">
+                    NASA Space Apps
+                    <br /> Challenge <br />
+                    {"("}Regional lvl - Kathmandu{")"}
+                  </p>
+                </a>
+              </span>
+            </motion.div>
           </motion.div>
         </div>
         <div className="flex justify-center items-center my-5">

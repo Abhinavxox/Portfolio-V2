@@ -40,10 +40,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a>Blogs</a>
+                <Link to="blogs" smooth={true} duration={2000}>
+                  Blogs
+                </Link>
               </li>
               <li>
-                <a>Contact</a>
+                <Link to="contact" smooth={true} duration={2000}>
+                  Contact
+                </Link>
               </li>
               <li>
                 <div className="flex items-center">
@@ -101,10 +105,24 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="yellow-list">
-              <a className="yellow-a">Blogs</a>
+              <Link
+                to="blogs"
+                smooth={true}
+                duration={2000}
+                className="yellow-a"
+              >
+                Blogs
+              </Link>
             </li>
             <li className="yellow-list">
-              <a className="yellow-a">Contact</a>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={2000}
+                className="yellow-a"
+              >
+                Contact
+              </Link>
             </li>
             <div className="text-2xl">|</div>
             <div className="flex items-center justify-between">

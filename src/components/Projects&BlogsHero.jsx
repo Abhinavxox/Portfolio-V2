@@ -79,6 +79,7 @@ const ProjectsHero = ({ dataToShow }) => {
                 <motion.div
                   className={`xl:h-96 xl:w-96 w-64 h-64 mx-auto my-5 relative overflow-hidden`}
                   ref={ref}
+                  key={item.title}
                   animate={controls}
                   initial="hidden"
                   variants={animationVariants}

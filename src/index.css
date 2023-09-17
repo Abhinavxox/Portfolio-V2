@@ -85,3 +85,12 @@
   border-radius: 100%;
   opacity: 0.2;
 }
+
+.trophies-list {
+  display: none;
+}
+
+.trophies:hover .trophies-list {
+  display: block;
+  opacity: 1;
+}

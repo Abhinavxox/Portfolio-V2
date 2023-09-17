@@ -28,8 +28,8 @@ const ProjectsHero = () => {
   });
 
   return (
-    <>
-      {data ? (
+    <div>
+      {/* {data ? (
         <animated.div
           style={trailProps}
           ref={ref}
@@ -63,8 +63,8 @@ const ProjectsHero = () => {
         </animated.div>
       ) : (
         ""
-      )}
-    </>
+      )} */}
+    </div>
   );
 };
 

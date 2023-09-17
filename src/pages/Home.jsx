@@ -9,8 +9,8 @@ const Home = () => {
     <div className="m-0 bg-[#2E2E35]">
       <Hero />
       <Timeline />
-      {/* <ProjectsHero />
-      <BlogsHero /> */}
+      <ProjectsHero />
+      {/* <BlogsHero /> */}
     </div>
   );
 };

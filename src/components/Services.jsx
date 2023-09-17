@@ -43,7 +43,11 @@ const Services = () => {
               <h1 className="uppercase text-center font-medium my-2">
                 Web Development
               </h1>
-              <p className="text-center text-sm font-light my-2">21 Projects</p>
+              <p className="text-center text-sm font-light my-2">
+                <a className="hero-a" href="https://github.com/Abhinavxox">
+                  21 Projects
+                </a>
+              </p>
             </div>
           </motion.div>
         </div>
@@ -63,7 +67,50 @@ const Services = () => {
               <h1 className="uppercase text-center font-medium my-2">
                 Project Management
               </h1>
-              <p className="text-center text-sm font-light my-2">21 Projects</p>
+              <p className="text-center text-sm font-light my-2">
+                <a className="hero-a" href="https://github.com/Abhinavxox">
+                  3 Projects
+                </a>
+              </p>
+            </div>
+          </motion.div>
+        </div>
+        <div className="flex justify-center items-center my-5">
+          <motion.div
+            className="container bg-[#2E2E35] h-64 w-64 flex justify-center items-center trophies"
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={animationVariants}
+          >
+            <div className="rotate-180">
+              <img
+                src="./images/services/trophy.svg"
+                className="h-20 w-20 mx-auto my-2"
+              />
+              <h1 className="uppercase text-center font-medium my-2">
+                TROPHIES
+              </h1>
+              <p className="text-center text-sm font-light my-2">
+                2 National Hackathons
+                <div className="trophies-list font-bold">
+                  <br />
+                  <a
+                    className="hero-a"
+                    href="https://devfolio.co/projects/story-wizard-4811"
+                  >
+                    Hackverse 4.0
+                  </a>
+                  <br />
+                  <a
+                    className="hero-a"
+                    href="https://www.spaceappschallenge.org/"
+                  >
+                    NASA Space Apps Challenge <br />
+                    (Regional lvl - Kathmandu)
+                  </a>
+                </div>
+              </p>
             </div>
           </motion.div>
         </div>
@@ -77,33 +124,16 @@ const Services = () => {
           >
             <div className="rotate-180">
               <img
-                src="./images/services/code.svg"
+                src="./images/services/oss.svg"
                 className="h-20 w-20 mx-auto my-2"
               />
               <h1 className="uppercase text-center font-medium my-2">
-                Web Development
+                Open-Source <br />
+                Contributions
               </h1>
-              <p className="text-center text-sm font-light my-2">21 Projects</p>
-            </div>
-          </motion.div>
-        </div>
-        <div className="flex justify-center items-center my-5">
-          <motion.div
-            className="container bg-[#2E2E35] h-64 w-64 flex justify-center items-center"
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={animationVariants}
-          >
-            <div className="rotate-180">
-              <img
-                src="./images/services/code.svg"
-                className="h-20 w-20 mx-auto my-2"
-              />
-              <h1 className="uppercase text-center font-medium my-2">
-                Web Development
-              </h1>
-              <p className="text-center text-sm font-light my-2">21 Projects</p>
+              <p className="text-center text-sm font-light my-2">
+                Wikimedia, CNCF, Casbin
+              </p>
             </div>
           </motion.div>
         </div>

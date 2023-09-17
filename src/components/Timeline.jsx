@@ -16,11 +16,11 @@ const Timeline = () => {
   });
 
   return (
-    <section id="about" className="bg-[#34343B] h-fit">
+    <section className="bg-[#34343B] h-fit" id="about">
       <animated.div
         style={trailLeftProps}
         ref={ref}
-        className="w-full flex justify-center xl:py-20 py-10"
+        className="w-full flex justify-center xl:pt-20 pt-10 xl:pb-10 pb-5"
       >
         <div className="font-medium xl:w-1/2 w-4/5 text-center">
           <h1 className="text-[#e4aa48] my-2 text-xl">ABOUT ME</h1>

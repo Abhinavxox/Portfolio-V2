@@ -30,12 +30,14 @@ const Navbar = () => {
               className="dropdown-content z-[1] menu p-2 shadow rounded-box w-52 bg-[#34343B]"
             >
               <li>
-                <Link to="about" smooth={true} duration={1000}>
+                <Link to="about" smooth={true} duration={2000}>
                   About
                 </Link>
               </li>
               <li>
-                <a>Projects</a>
+                <Link to="projects" smooth={true} duration={2000}>
+                  Projects
+                </Link>
               </li>
               <li>
                 <a>Blogs</a>
@@ -82,14 +84,21 @@ const Navbar = () => {
               <Link
                 to="about"
                 smooth={true}
-                duration={1000}
+                duration={2000}
                 className="yellow-a"
               >
                 About
               </Link>
             </li>
             <li className="yellow-list">
-              <a className="yellow-a">Projects</a>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={2000}
+                className="yellow-a"
+              >
+                Projects
+              </Link>
             </li>
             <li className="yellow-list">
               <a className="yellow-a">Blogs</a>

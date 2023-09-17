@@ -93,7 +93,7 @@ const Services = () => {
               </h1>
               <p className="text-center text-sm font-light my-2">
                 2 National Hackathons
-                <div className="trophies-list font-bold">
+                <span className="trophies-list font-bold">
                   <br />
                   <a
                     className="hero-a"
@@ -109,7 +109,7 @@ const Services = () => {
                     NASA Space Apps Challenge <br />
                     (Regional lvl - Kathmandu)
                   </a>
-                </div>
+                </span>
               </p>
             </div>
           </motion.div>

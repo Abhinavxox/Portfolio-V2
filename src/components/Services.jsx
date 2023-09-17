@@ -101,7 +101,7 @@ const Services = () => {
                   className="hero-a"
                   href="https://devfolio.co/projects/story-wizard-4811"
                 >
-                  <p className="text-center">Hackverse 4.0</p>
+                  <p className="text-center">Hackverse 4.0 </p>
                 </a>
                 <br />
                 <a

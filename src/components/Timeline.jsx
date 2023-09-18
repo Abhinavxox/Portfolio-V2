@@ -56,11 +56,12 @@ const Timeline = () => {
                     </h3>
                     <p className="mb-4 text-base font-normal text-gray-500">
                       Worked on frontend for design of landing page for
-                      Hacktoberfest event hosted by{" "}
+                      Hacktoberfest event hosted by
                       <a className="hero-a" href="https://amfoss.in/">
                         amFOSS
                       </a>
-                      . Link :
+                      <br />
+                      Link :
                       <a className="hero-a" href="https://events.amfoss.in/">
                         {" "}
                         events.amfoss.in

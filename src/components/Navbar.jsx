@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="md:pt-20 pt-5 xl:px-72 px-10 bg-[#2E2E35]">
+    <div className="md:pt-20 pt-5 xl:px-72 px-10 bg-[#2E2E35]" id="nav">
       <div className="flex justify-between w-full">
         <a className="yellow-a">
           <img src="./images/Logo.png" className="w-20" />

@@ -122,7 +122,7 @@ const Services = () => {
                 TROPHIES
               </h1>
               <p className="text-center text-sm font-light my-2">
-                2 National Hackathons
+                2 Trophies | 8 Hackathons
               </p>
             </div>
             <motion.div className="absolute inset-0 bg-[#2e2e35] opacity-0 hover:opacity-80 transition-[all] duration-500 ease-in-out flex justify-center items-center rotate-180 px-3">

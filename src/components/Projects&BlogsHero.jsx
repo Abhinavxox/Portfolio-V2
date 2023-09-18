@@ -77,7 +77,7 @@ const ProjectsHero = ({ dataToShow }) => {
               .filter((item, index) => index < 3)
               .map((item) => (
                 <motion.div
-                  className={`xl:h-96 xl:w-96 w-64 h-64 mx-auto my-5 relative overflow-hidden`}
+                  className={`lg:h-96 lg:w-96 w-64 h-64 p-2 my-5  relative overflow-hidden`}
                   ref={ref}
                   key={item.title}
                   animate={controls}

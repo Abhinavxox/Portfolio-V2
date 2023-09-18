@@ -39,7 +39,7 @@ const Timeline = () => {
       <div className="grid grid-cols-1 xl:grid-cols-2 p-5">
         {/* TimeLine */}
         <div className="flex flex-col justify-center px-8 py-4 text-center lg:text-left">
-          <div className="h-full flex items-center">
+          <div className="h-full flex items-center justify-center">
             <div>
               <h1 className="text-[#e4aa48] my-2 text-xl font-medium">
                 TIMELINE

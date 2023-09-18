@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import ProjectsBlogsHero from "../components/Projects&BlogsHero";
 import Timeline from "../components/Timeline";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Timeline />
       <ProjectsBlogsHero dataToShow="projects" />
       <ProjectsBlogsHero dataToShow="blogs" />
+      <Contact />
     </div>
   );
 };

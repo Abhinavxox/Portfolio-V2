@@ -57,7 +57,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="md:flex relative z-[1] xl:w-1/3 w-1/2 hidden">
+      <div className="md:flex relative z-[1] xl:w-1/3 w-1/2 hidden h-full ">
         <div className="bg-circle 2xl:flex hidden"></div>
         <img src="./images/abhinav-removebg.png" draggable="false" />
       </div>

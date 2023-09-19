@@ -20,9 +20,9 @@ const Timeline = () => {
       <animated.div
         style={trailLeftProps}
         ref={ref}
-        className="w-full flex justify-center xl:pt-20 pt-10 xl:pb-10 pb-5"
+        className="w-full flex justify-center lg:pt-20 pt-10 lg:pb-10 pb-5"
       >
-        <div className="font-medium xl:w-1/2 w-4/5 text-center">
+        <div className="font-medium lg:w-1/2 w-4/5 text-center">
           <h1 className="text-[#e4aa48] my-2 text-xl">ABOUT ME</h1>
           <p className="text-3xl my-2">
             CSE-AI Student S5 | Member & Mentor at{" "}
@@ -36,7 +36,7 @@ const Timeline = () => {
           </p>
         </div>
       </animated.div>
-      <div className="grid grid-cols-1 xl:grid-cols-2 p-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-5">
         {/* TimeLine */}
         <div className="flex flex-col justify-center px-8 py-4 text-center lg:text-left">
           <div className="h-full flex items-center justify-center">
@@ -109,7 +109,7 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-        <div className="my-10 xl:my-0">
+        <div className="my-10 lg:my-0">
           <h1 className="text-[#e4aa48] mt-2 text-xl font-medium text-center">
             SERVICES & ACHIEVEMENTS
           </h1>

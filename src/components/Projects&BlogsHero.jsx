@@ -43,10 +43,10 @@ const ProjectsHero = ({ dataToShow }) => {
       }`}
     >
       <div
-        className="flex justify-center items-center xl:pt-20 pt-10 xl:pb-10 pb-5"
+        className="flex justify-center items-center lg:pt-20 pt-10 lg:pb-10 pb-5"
         id={dataToShow}
       >
-        <div className="font-medium xl:w-1/2 w-4/5 text-center">
+        <div className="font-medium lg:w-1/2 w-4/5 text-center">
           {dataToShow === "projects" ? (
             <>
               <h1 className="text-[#e4aa48] my-2 text-xl">PROJECTS</h1>
@@ -71,7 +71,7 @@ const ProjectsHero = ({ dataToShow }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-2/3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-2/3">
           {data &&
             data
               .filter((item, index) => index < 3)

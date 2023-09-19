@@ -31,7 +31,7 @@ const BlogsProjectsPage = ({ content }) => {
       <>
         <div className="form-control w-full p-5">
           <div className="flex justify-center">
-            <div className="input-group w-full xl:w-3/4">
+            <div className="input-group w-full lg:w-3/4">
               <input
                 type="text"
                 placeholder="Search…"
@@ -60,7 +60,7 @@ const BlogsProjectsPage = ({ content }) => {
         </div>
         {filteredData.length > 0 ? (
           <div className="">
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3">
               {filteredData.map((item) => (
                 <Card
                   key={item.title}

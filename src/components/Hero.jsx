@@ -23,14 +23,14 @@ const Hero = () => {
     <animated.div
       style={trailProps}
       ref={ref}
-      className="w-full flex justify-between xl:px-72 px-10 h-fit pt-28"
+      className="w-full flex justify-between lg:px-72 px-10 h-fit pt-28"
     >
-      <div className="xl:w-1/3 md:w-1/2 w-full">
+      <div className="lg:w-1/3 md:w-1/2 w-full">
         <div>
           <img src="./images/NameLogo.png" />
         </div>
         <div className="yellow-bar my-5 ml-5"></div>
-        <div className="ml-3 font-semibold hidden xl:flex">
+        <div className="ml-3 font-semibold hidden lg:flex">
           <p>
             <a className="hero-a" href="https://www.instagram.com/abhina_v1/">
               Instagram
@@ -57,11 +57,11 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="md:flex relative z-[1] xl:w-1/3 w-1/2 hidden h-full ">
-        <div className="bg-circle 2xl:flex hidden"></div>
+      <div className="md:flex relative z-[1] lg:w-1/3 w-1/2 hidden h-full ">
+        <div className="bg-circle 2lg:flex hidden"></div>
         <img src="./images/abhinav-removebg.png" draggable="false" />
       </div>
-      <div className="xl:flex justify-left w-1/3 mx-5 hidden">
+      <div className="lg:flex justify-left w-1/3 mx-5 hidden">
         <div className="font-medium">
           <h1 className="text-[#e4aa48] my-2 text-xl">INTRODUCTION</h1>
           <p className="text-3xl my-2">

@@ -6,11 +6,11 @@ const Contact = () => {
     <section>
       <div id="contact" className="flex justify-center items-center relative">
         <div>
-          <div className="font-medium w-full text-center xl:pt-20 pt-10 xl:pb-10 pb-5">
+          <div className="font-medium w-full text-center lg:pt-20 pt-10 lg:pb-10 pb-5">
             <h1 className="text-[#e4aa48] my-2 text-xl">CONTACT ME</h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 pb-32">
-            <div className="h-20 w-[100%] xl:w-96 mx-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-32">
+            <div className="h-20 w-[100%] lg:w-96 mx-2">
               <div className="bg-[#34343B] w-full flex items-center h-full">
                 <img
                   src="./images/contact/phone.svg"
@@ -21,7 +21,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div className="h-20 w-[100%] xl:w-96 mx-2">
+            <div className="h-20 w-[100%] lg:w-96 mx-2">
               <div className="bg-[#34343B] w-full flex items-center h-full">
                 <img
                   src="./images/contact/email.svg"
@@ -32,7 +32,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div className="h-20 w-[100%] xl:w-96 mx-2">
+            <div className="h-20 w-[100%] lg:w-96 mx-2">
               <div className="bg-[#34343B] w-full flex items-center h-full">
                 <img
                   src="./images/contact/phone.svg"
@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
         </div>
         <Link
-          className="absolute bottom-10 right-10 hidden xl:flex"
+          className="absolute bottom-10 right-10 hidden lg:flex"
           to="nav"
           smooth={true}
           duration={2000}

@@ -2,13 +2,13 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="md:pt-20 pt-5 xl:px-72 px-10 bg-[#2E2E35]" id="nav">
+    <div className="md:pt-20 pt-5 lg:px-72 px-10 bg-[#2E2E35]" id="nav">
       <div className="flex justify-between w-full">
         <a className="yellow-a">
           <img src="./images/Logo.png" className="w-20" />
         </a>
         <div className="flex justify-between items-center">
-          <div className="dropdown dropdown-end xl:hidden">
+          <div className="dropdown dropdown-end lg:hidden">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <ul className="xl:flex justify-between items-center float-right w-96 text-md hidden font-semibold">
+          <ul className="lg:flex justify-between items-center float-right w-96 text-md hidden font-semibold">
             <li className="yellow-list">
               <Link
                 to="about"

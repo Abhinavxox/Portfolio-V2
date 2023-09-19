@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import BlogsProjectsPage from "./pages/BlogsProjectsPage";
+import Timeline from "./pages/Timeline";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/timeline" element={<Timeline />} />
           <Route
             path="/blogs"
             element={<BlogsProjectsPage content="blogs" />}

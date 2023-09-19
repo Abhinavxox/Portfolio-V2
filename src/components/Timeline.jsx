@@ -100,7 +100,7 @@ const Timeline = () => {
                 </ol>
               </div>
               <div className="flex justify-center py-5">
-                <Link to="/about">
+                <Link to="/timeline">
                   <button className="button-new mt-10 font-semibold">
                     Learn More
                   </button>

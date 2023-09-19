@@ -1,12 +1,13 @@
 import { Link } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="md:pt-20 pt-5 lg:px-72 px-10 bg-[#2E2E35]" id="nav">
       <div className="flex justify-between w-full">
-        <a className="yellow-a">
+        <LinkRouter to="/" className="yellow-a">
           <img src="./images/Logo.png" className="w-20" />
-        </a>
+        </LinkRouter>
         <div className="flex justify-between items-center">
           <div className="dropdown dropdown-end lg:hidden">
             <label tabIndex={0} className="btn btn-ghost btn-circle">

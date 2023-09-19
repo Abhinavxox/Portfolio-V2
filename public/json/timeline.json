@@ -1,0 +1,83 @@
+[
+  {
+    "year": 2023,
+    "months": [
+      {
+        "month": "September",
+        "tasks": [
+          {
+            "title": "Designed Landing Page For Hacktoberfest 2023",
+            "description": "Worked on frontend for design of landing page for Hacktoberfest event hosted by amfoss",
+            "link": "https://events.amfoss.in/",
+            "image": ""
+          }
+        ]
+      },
+      {
+        "month": "August",
+        "tasks": [
+          {
+            "title": "MLH Fellowship",
+            "description": "Had my interviews for MLH fellowship. Cleared all the rounds but they couldn't match a project for me.",
+            "link": "",
+            "image": "./images/timelineEvents/August2023-MLHFellowship.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "months": [
+      {
+        "month": "December",
+        "tasks": [
+          {
+            "title": "Project Completion",
+            "description": "Completed a major project for XYZ company, enhancing their website performance.",
+            "link": "https://www.xyzcompany.com/",
+            "image": "./images/timelineEvents/Dec2022-ProjectCompletion.png"
+          }
+        ]
+      },
+      {
+        "month": "June",
+        "tasks": [
+          {
+            "title": "Conference Presentation",
+            "description": "Gave a presentation on AI and machine learning at the International Tech Conference.",
+            "link": "https://www.internationaltechconference.com/",
+            "image": "./images/timelineEvents/June2022-ConferencePresentation.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "months": [
+      {
+        "month": "October",
+        "tasks": [
+          {
+            "title": "Hackathon Win",
+            "description": "Won first place at the Tech Innovators Hackathon with a smart home automation project.",
+            "link": "https://www.techinnovatorshackathon.com/",
+            "image": "./images/timelineEvents/Oct2021-HackathonWin.png"
+          }
+        ]
+      },
+      {
+        "month": "April",
+        "tasks": [
+          {
+            "title": "Course Completion",
+            "description": "Completed an online course on web development with distinction.",
+            "link": "https://www.webdevelopmentcourse.com/",
+            "image": "./images/timelineEvents/April2021-CourseCompletion.png"
+          }
+        ]
+      }
+    ]
+  }
+]

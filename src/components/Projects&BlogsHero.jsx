@@ -112,7 +112,9 @@ const ProjectsHero = ({ dataToShow }) => {
         </div>
       </div>
       <div className="flex justify-center py-5">
-        <Link to={`/${dataToShow}`}>
+        <Link
+        // to={`/${dataToShow}`}
+        >
           <button className="button-new mt-10 font-semibold">View More</button>
         </Link>
       </div>

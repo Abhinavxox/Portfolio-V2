@@ -113,7 +113,12 @@ const ProjectsHero = ({ dataToShow }) => {
       </div>
       <div className="flex justify-center py-5">
         <Link
-        // to={`/${dataToShow}`}
+          // to={`/${dataToShow}`}
+          to={
+            dataToShow === "projects"
+              ? "https://github.com/Abhinavxox?tab=repositories"
+              : "https://meronaamabhinav.hashnode.dev/"
+          }
         >
           <button className="button-new mt-10 font-semibold">View More</button>
         </Link>

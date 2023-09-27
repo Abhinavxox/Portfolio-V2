@@ -71,10 +71,9 @@ const Hero = () => {
             OSS Enthusiast
           </p>
           <p className="my-2 font-medium">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
-            nihil alias voluptatibus commodi facere ipsam vero excepturi
-            dolorem. Numquam aperiam sed officiis voluptate dolorem consequatur
-            asperiores nobis praesentium saepe ut?
+            MERN stack developer | Member & Mentor at amFOSS | Open-Source
+            Enthusiast |
+            <br /> S5 CSE-AI Student at AVV
           </p>
           <Link
             to="about"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -33,15 +34,17 @@ const Contact = () => {
               </div>
             </div>
             <div className="h-20 w-[100%] lg:w-96 mx-2">
-              <div className="bg-[#34343B] w-full flex items-center h-full">
-                <img
-                  src="./images/contact/phone.svg"
-                  className="h-8 w-8 mx-4"
-                />
-                <p className="font-medium text-lg text-[#e4aa48]">
-                  +91 9745917960
-                </p>
-              </div>
+              <RouterLink to="https://www.linkedin.com/in/itsmeabhinavpandey/">
+                <div className="bg-[#34343B] w-full flex items-center h-full">
+                  <img
+                    src="./images/contact/linkedin.svg"
+                    className="h-8 w-8 mx-4"
+                  />
+                  <p className="font-medium text-lg text-[#e4aa48]">
+                    /itsmeabhinavpandey
+                  </p>
+                </div>
+              </RouterLink>
             </div>
           </div>
         </div>

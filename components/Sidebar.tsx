@@ -21,7 +21,10 @@ export default function Sidebar() {
         onClick={() => setIsMobileOpen(!isMobileOpen)}
         className="fixed top-4 left-4 z-[60] md:hidden w-10 h-10 bg-gradient-jet rounded-lg flex items-center justify-center text-vegas-gold border border-jet"
       >
-        <ion-icon name={isMobileOpen ? "close" : "menu"} className="text-2xl"></ion-icon>
+        <ion-icon
+          name={isMobileOpen ? "close" : "menu"}
+          className="text-2xl"
+        ></ion-icon>
       </button>
 
       {/* Overlay for mobile */}
@@ -37,37 +40,37 @@ export default function Sidebar() {
           isMobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
-      <div className="flex flex-col items-center text-center mb-6">
-        <figure className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-vegas-gold">
-          <Image
-            src={personalInfo.avatar}
-            alt={personalInfo.name}
-            width={80}
-            height={80}
-            className="w-full h-full object-cover"
-          />
-        </figure>
+        <div className="flex flex-col items-center text-center mb-6">
+          <figure className="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-vegas-gold">
+            <Image
+              src={personalInfo.avatar}
+              alt={personalInfo.name}
+              width={80}
+              height={80}
+              className="w-full h-full object-cover"
+            />
+          </figure>
 
-        <h1 className="text-2xl font-semibold text-white-1 mb-2">
-          {personalInfo.name}
-        </h1>
+          <h1 className="text-2xl font-semibold text-white-1 mb-2">
+            {personalInfo.name}
+          </h1>
 
-        <p className="text-sm text-light-gray-70 mb-4">
-          {personalInfo.title}
-        </p>
+          <p className="text-sm text-light-gray-70 mb-4">
+            {personalInfo.title}
+          </p>
 
-        {/* Download Resume Button */}
-        <a
-          href={personalInfo.resume}
-          download
-          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orange-yellow-crayola to-vegas-gold text-eerie-black-1 rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all mb-4"
-        >
-          <ion-icon name="download-outline" className="text-lg"></ion-icon>
-          <span>Download Resume</span>
-        </a>
-      </div>
+          {/* Download Resume Button */}
+          <a
+            href={personalInfo.resume}
+            download
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-orange-yellow-crayola to-vegas-gold text-eerie-black-1 rounded-lg font-medium hover:shadow-lg hover:scale-105 transition-all mb-4"
+          >
+            <ion-icon name="download-outline" className="text-lg"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </div>
 
-      <div className="border-t border-jet pt-6 mt-6">
+        <div className="border-t border-jet pt-6 mt-6">
           <ul className="space-y-4">
             <li className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-onyx flex items-center justify-center text-vegas-gold">
@@ -81,33 +84,6 @@ export default function Sidebar() {
                 >
                   {personalInfo.email}
                 </a>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-onyx flex items-center justify-center text-vegas-gold">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-              <div>
-                <p className="text-xs text-light-gray-70 mb-1">Phone</p>
-                <a
-                  href={`tel:${personalInfo.phone.replace(/\s/g, "")}`}
-                  className="text-sm text-light-gray hover:text-vegas-gold transition-colors"
-                >
-                  {personalInfo.phone}
-                </a>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-onyx flex items-center justify-center text-vegas-gold">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-              <div>
-                <p className="text-xs text-light-gray-70 mb-1">Birthday</p>
-                <time className="text-sm text-light-gray">
-                  {personalInfo.birthday}
-                </time>
               </div>
             </li>
 
@@ -157,4 +133,3 @@ export default function Sidebar() {
     </>
   );
 }
-

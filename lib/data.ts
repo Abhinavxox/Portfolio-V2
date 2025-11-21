@@ -5,7 +5,7 @@ export const personalInfo = {
   phone: "+977 9841085450",
   birthday: "2 March, 2003",
   location: "Banepa-8, Kavrepalanchok, Nepal",
-  avatar: "/assets/images/my-avatar.png",
+  avatar: "/assets/images/avatar.jpeg",
   resume: "/Abhinav_CV.docx", // Path to resume file
   social: {
     facebook: "#",
@@ -179,7 +179,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-1.jpg",
-    description: "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
+    description:
+      "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
     link: "#",
   },
   {
@@ -187,7 +188,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-2.jpg",
-    description: "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
+    description:
+      "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
     link: "#",
   },
   {
@@ -195,7 +197,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-3.jpg",
-    description: "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.",
+    description:
+      "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.",
     link: "#",
   },
   {
@@ -203,7 +206,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-4.jpg",
-    description: "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.",
+    description:
+      "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.",
     link: "#",
   },
   {
@@ -211,7 +215,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-5.jpg",
-    description: "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:
+      "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     link: "#",
   },
   {
@@ -219,8 +224,8 @@ export const blogPosts = [
     category: "Design",
     date: "Feb 23, 2022",
     image: "/assets/images/blog-6.jpg",
-    description: "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.",
+    description:
+      "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.",
     link: "#",
   },
 ];
-

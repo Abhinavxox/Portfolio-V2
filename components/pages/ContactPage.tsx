@@ -89,7 +89,7 @@ export default function ContactPage() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 bg-card border border-border-gray rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent transition-colors resize-none"
+            className="w-full px-4 py-3 glass border border-glass-border rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent focus:glass-strong transition-all resize-none"
           />
 
           <motion.button

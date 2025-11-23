@@ -26,9 +26,9 @@ export default function ThemeToggle() {
         }}
       >
         {theme === "dark" ? (
-          <ion-icon name="moon-outline" className="text-sm text-blue-400"></ion-icon>
+          <ion-icon name="moon-outline" className="text-sm text-accent"></ion-icon>
         ) : (
-          <ion-icon name="sunny-outline" className="text-sm text-yellow-400"></ion-icon>
+          <ion-icon name="sunny-outline" className="text-sm text-accent"></ion-icon>
         )}
       </motion.div>
     </motion.button>

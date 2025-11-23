@@ -66,7 +66,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-card p-6 rounded-xl border border-border-gray shadow-1"
+              className="glass p-6 rounded-xl border border-glass-border shadow-1"
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg glass-light flex items-center justify-center text-accent flex-shrink-0">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-card p-6 rounded-xl border border-border-gray shadow-1"
+              className="glass p-6 rounded-xl border border-glass-border shadow-1"
             >
               <h4 className="text-lg font-semibold text-text-primary mb-2">
                 {achievement.title}

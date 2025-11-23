@@ -30,7 +30,7 @@ export default function Sidebar() {
       {/* Overlay for mobile */}
       {isMobileOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-[55] md:hidden"
+          className="fixed inset-0 bg-text-primary/50 z-[55] md:hidden"
           onClick={() => setIsMobileOpen(false)}
         ></div>
       )}
@@ -63,7 +63,7 @@ export default function Sidebar() {
           <a
             href={personalInfo.resume}
             download
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-accent text-white rounded-lg font-medium hover:shadow-2 hover:scale-105 transition-all mb-4 glass-strong"
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-accent text-white rounded-lg font-medium hover:shadow-2 hover:scale-105 transition-all mb-4 shadow-lg"
           >
             <ion-icon name="download-outline" className="text-lg"></ion-icon>
             <span>Download Resume</span>

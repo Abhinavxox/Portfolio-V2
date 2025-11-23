@@ -1,44 +1,51 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { personalInfo } from "@/lib/data";
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
-
-const navItems = [
-  { name: "About", path: "/" },
-  { name: "Resume", path: "/resume" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
-];
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
 
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/works", label: "Works" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname?.startsWith(href);
+  };
+
   return (
-    <nav className="sticky top-0 glass z-40 border-b border-glass-border">
-      <div className="flex items-center justify-between px-4 md:px-6">
-        <ul className="flex items-center justify-center gap-1 p-2 md:p-4 overflow-x-auto">
-          {navItems.map((item) => (
-            <li key={item.path}>
-              <Link
-                href={item.path}
-                className={`px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-medium transition-all whitespace-nowrap ${
-                  pathname === item.path
-                    ? "glass-strong text-accent"
-                    : "text-text-secondary hover:text-accent hover:glass-light"
-                }`}
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="flex items-center gap-4">
-          <ThemeToggle />
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
+      <div className="max-w-7xl mx-auto px-6 py-5">
+        <div className="flex items-center justify-center">
+          {/* Centered Navigation Links */}
+          <div className="flex items-center gap-10">
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-lg font-medium transition-all duration-200 ${
+                    active
+                      ? "text-white"
+                      : "text-text-secondary hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </nav>
   );
 }
-

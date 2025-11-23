@@ -5,12 +5,13 @@ export const personalInfo = {
   phone: "+977 9841085450",
   birthday: "2 March, 2003",
   location: "Banepa-8, Kavrepalanchok, Nepal",
-  avatar: "/assets/images/avatar.jpeg",
+  avatar: "/images/avatar.jpeg",
   resume: "/Abhinav_CV.docx", // Path to resume file
   social: {
-    facebook: "#",
+    github: "#",
+    linkedin: "#",
     twitter: "#",
-    instagram: "#",
+    leetcode: "#",
   },
 };
 
@@ -229,3 +230,4 @@ export const blogPosts = [
     link: "#",
   },
 ];
+

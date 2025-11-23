@@ -1,11 +1,12 @@
-import Layout from "@/components/Layout";
-import AboutPage from "@/components/pages/AboutPage";
+import Navbar from "@/components/Navbar";
+import HomePage from "@/components/HomePage";
 
 export default function Home() {
   return (
-    <Layout>
-      <AboutPage />
-    </Layout>
+    <div className="min-h-screen">
+      <Navbar />
+      <HomePage />
+    </div>
   );
 }
 

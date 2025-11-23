@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --font-poppins: 'Poppins', sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 * {
@@ -18,69 +18,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Light Theme - Glassmorphic */
-html.light {
-  --bg-gradient-start: #f0f0f0;
-  --bg-gradient-end: #e0e0e0;
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.8);
-  --text-primary: #1a1a1a;
-  --text-secondary: rgba(26, 26, 26, 0.7);
-  --text-tertiary: rgba(26, 26, 26, 0.5);
-  --accent: #4A90E2;
-  --accent-hover: #357ABD;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --glass-strong-bg: rgba(255, 255, 255, 0.85);
-  --glass-strong-border: rgba(255, 255, 255, 0.9);
-  --glass-light-bg: rgba(255, 255, 255, 0.3);
-  --glass-light-border: rgba(255, 255, 255, 0.4);
-}
-
-/* Dark Theme - Glassmorphic */
-html.dark {
+/* Dark Theme - Default */
+html {
   --bg-gradient-start: #0a0a0a;
-  --bg-gradient-end: #1a1a1a;
+  --bg-gradient-end: #1f1f1f;
   --glass-bg: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.1);
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-black: #0f0f0f;
   --text-tertiary: rgba(255, 255, 255, 0.6);
-  --accent: #6BA3D6;
-  --accent-hover: #5B8DB8;
+  --accent: #6ba3d6;
+  --accent-hover: #5b8db8;
   --shadow-color: rgba(0, 0, 0, 0.3);
   --glass-strong-bg: rgba(255, 255, 255, 0.12);
   --glass-strong-border: rgba(255, 255, 255, 0.2);
-  --glass-light-bg: rgba(255, 255, 255, 0.06);
-  --glass-light-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
   font-family: var(--font-poppins), sans-serif;
-  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
-  background-attachment: fixed;
+  background-color: #0f0f0f;
   color: var(--text-primary);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* Subtle background texture - theme-aware */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(circle at 20% 50%, var(--shadow-color) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, var(--shadow-color) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, var(--shadow-color) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.2;
 }
 
 @layer utilities {
@@ -91,7 +49,7 @@ body::before {
     border: 1px solid var(--glass-border);
     box-shadow: 0 8px 32px 0 var(--shadow-color);
   }
-  
+
   .glass-strong {
     background: var(--glass-strong-bg);
     backdrop-filter: blur(16px);
@@ -99,40 +57,35 @@ body::before {
     border: 1px solid var(--glass-strong-border);
     box-shadow: 0 8px 32px 0 var(--shadow-color);
   }
-  
-  .glass-light {
-    background: var(--glass-light-bg);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid var(--glass-light-border);
+
+  /* ⭐ New reusable portfolio card */
+  .portfolio-card {
+    background: linear-gradient(
+      to bottom right,
+      var(--bg-gradient-end),
+      var(--bg-gradient-start)
+    );
+
+    border: 0.5px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 var(--shadow-color);
+    border-radius: 1rem;
+    height: 220px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
   }
-  
-  .text-gradient-accent {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+
+  .interactive-element {
+    cursor: pointer;
+    background-color: #323232;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .interactive-element:hover {
+    background-color: #f6f6f6;
+  }
+
+  .interactive-element:hover * {
+    color: #0f0f0f !important;
   }
 }
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--glass-bg);
-  opacity: 0.3;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 10px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-hover);
-}
-

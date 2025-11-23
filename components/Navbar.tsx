@@ -22,18 +22,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f0f0f]">
-      <div className="max-w-7xl mx-auto px-6 py-5">
+    <nav className="top-0 left-0 right-0 z-50 bg-[#0f0f0f] hidden md:flex">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-5">
         <div className="flex items-center justify-center">
           {/* Centered Navigation Links */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 flex-wrap justify-center">
             {navLinks.map((link) => {
               const active = isActive(link.href);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-lg font-medium transition-all duration-200 ${
+                  className={`text-sm sm:text-base md:text-lg font-medium transition-all duration-200 ${
                     active
                       ? "text-white"
                       : "text-text-secondary hover:text-white"

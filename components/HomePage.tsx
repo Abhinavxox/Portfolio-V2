@@ -3,27 +3,22 @@
 import Link from "next/link";
 import { personalInfo, projects, blogPosts, achievements } from "@/lib/data";
 import Image from "next/image";
-import {
-  FaXTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaRightFromBracket,
-} from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { IoBookmarks } from "react-icons/io5";
 import { Fragment } from "react";
 
 export default function HomePage() {
   return (
-    <div className="pt-24 pb-12 px-6">
+    <div className="pt-5 md:pt-10  pb-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex gap-6 items-stretch">
-          {/* Left Sidebar - 1/3 width */}
-          <div className="w-1/3 flex">
-            <div className="portfolio-card min-h-[600px] flex flex-col items-center py-8 w-full">
+        <div className="flex flex-col lg:flex-row gap-6 items-stretch">
+          {/* Left Sidebar - Full width on mobile, 1/3 on desktop */}
+          <div className="w-full lg:w-1/3 flex">
+            <div className="portfolio-card min-h-[500px] sm:min-h-[600px] flex flex-col items-center py-6 sm:py-8 w-full px-4 sm:px-0">
               {/* Profile Picture */}
-              <div className="mb-6">
-                <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-glass-border">
+              <div className="mb-4 sm:mb-6">
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-glass-border">
                   <Image
                     src={personalInfo.avatar}
                     alt={personalInfo.name}
@@ -34,20 +29,20 @@ export default function HomePage() {
               </div>
 
               {/* Name */}
-              <h2 className="text-2xl font-semibold text-text-primary mb-2">
+              <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mb-2">
                 {personalInfo.name}
               </h2>
 
               {/* Title */}
-              <p className="text-text-secondary text-base mb-8">
+              <p className="text-text-secondary text-sm sm:text-base mb-6 sm:mb-8">
                 Software engineer
               </p>
 
               {/* Spacer to push buttons to bottom */}
-              <div className="flex-1"></div>
+              <div className="flex-1 hidden sm:block"></div>
 
               {/* Description */}
-              <div className="text-text-secondary text-lg mb-8 text-center">
+              <div className="text-text-secondary text-sm sm:text-lg mb-6 sm:mb-8 text-center px-2">
                 {personalInfo.description.map((item, index) => (
                   <Fragment key={index}>
                     <p className="mb-2">{item}</p>
@@ -56,15 +51,15 @@ export default function HomePage() {
               </div>
 
               {/* Spacer to push buttons to bottom */}
-              <div className="flex-1"></div>
+              <div className="flex-1 hidden sm:block"></div>
 
               {/* Buttons at the bottom */}
-              <div className="w-full mt-auto">
+              <div className="w-full mt-auto md:px-5 px-0">
                 {/* Resume Button */}
                 <a
                   href={personalInfo.resume}
                   download="Abhinav_CV.docx"
-                  className="interactive-element glass px-6 py-2.5 rounded-lg flex items-center gap-2 transition-colors text-lg font-medium mb-4 w-full justify-center"
+                  className="interactive-element glass px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg flex items-center gap-2 transition-colors text-base sm:text-lg font-medium mb-3 sm:mb-4 w-full justify-center"
                 >
                   <svg
                     width="20"
@@ -88,7 +83,7 @@ export default function HomePage() {
                 {/* GitHub Button */}
                 <Link
                   href={personalInfo.social.github}
-                  className="interactive-element glass px-6 py-2.5 rounded-lg flex items-center gap-2 transition-colors text-lg font-medium mb-4 w-full justify-center"
+                  className="interactive-element glass px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg flex items-center gap-2 transition-colors text-base sm:text-lg font-medium mb-3 sm:mb-4 w-full justify-center"
                 >
                   <svg
                     width="20"
@@ -110,7 +105,7 @@ export default function HomePage() {
                   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="interactive-element glass px-6 py-2.5 rounded-lg flex items-center gap-2 transition-colors text-lg font-medium w-full justify-center"
+                  className="interactive-element glass px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg flex items-center gap-2 transition-colors text-base sm:text-lg font-medium w-full justify-center"
                 >
                   <svg
                     width="20"
@@ -131,11 +126,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right Content - 2/3 width */}
-          <div className="w-2/3 flex">
+          {/* Right Content - Full width on mobile, 2/3 on desktop */}
+          <div className="w-full lg:w-2/3 flex">
             <div
-              className="grid grid-cols-2 gap-6 min-h-[600px] w-full"
-              style={{ gridTemplateRows: "1fr 1fr" }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 min-h-[auto] sm:min-h-[600px] w-full"
+              style={{ gridTemplateRows: "auto" }}
             >
               {/* First row - Item 1 */}
               <Link
@@ -143,10 +138,10 @@ export default function HomePage() {
                 className="portfolio-card relative overflow-hidden block cursor-pointer transition-opacity hover:opacity-90"
                 style={{ height: "100%" }}
               >
-                <div className="h-full flex flex-col justify-between p-6">
+                <div className="h-full flex flex-col justify-between p-4 sm:p-6 min-h-[250px] sm:min-h-[auto]">
                   {/* Project Title - Top Center (Script Style) */}
                   <div className="text-center flex-1 flex items-center justify-center min-h-0">
-                    <div className="relative w-full max-w-[180px] aspect-square">
+                    <div className="relative w-full max-w-[120px] sm:max-w-[180px] aspect-square">
                       <Image
                         src="/images/project.png"
                         alt="Project"
@@ -164,14 +159,14 @@ export default function HomePage() {
                       <p className="text-xs uppercase tracking-wider text-text-secondary mb-1">
                         MY WORKS
                       </p>
-                      <h4 className="text-2xl font-semibold text-text-primary">
+                      <h4 className="text-xl sm:text-2xl font-semibold text-text-primary">
                         Projects
                       </h4>
                     </div>
 
                     {/* Right Side - Circular Icon with Sparkle */}
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <IoBookmarks className="w-8 h-8 text-text-secondary" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                      <IoBookmarks className="w-6 h-6 sm:w-8 sm:h-8 text-text-secondary" />
                     </div>
                   </div>
                 </div>
@@ -183,10 +178,10 @@ export default function HomePage() {
                 className="portfolio-card relative overflow-hidden block cursor-pointer transition-opacity hover:opacity-90"
                 style={{ height: "100%" }}
               >
-                <div className="h-full flex flex-col justify-between p-6">
+                <div className="h-full flex flex-col justify-between p-4 sm:p-6 min-h-[250px] sm:min-h-[auto]">
                   {/* Blog Image - Top Center */}
                   <div className="text-center flex-1 flex items-center justify-center min-h-0">
-                    <div className="relative w-full max-w-[180px] aspect-square">
+                    <div className="relative w-full max-w-[120px] sm:max-w-[180px] aspect-square">
                       <Image
                         src="/images/blog.png"
                         alt="Blog"
@@ -204,14 +199,14 @@ export default function HomePage() {
                       <p className="text-xs uppercase tracking-wider text-text-secondary mb-1">
                         KEEP UP WITH ME
                       </p>
-                      <h4 className="text-2xl font-semibold text-text-primary">
+                      <h4 className="text-xl sm:text-2xl font-semibold text-text-primary">
                         Blogs
                       </h4>
                     </div>
 
                     {/* Right Side - Circular Icon with Sparkle */}
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <IoBookmarks className="w-8 h-8 text-text-secondary" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                      <IoBookmarks className="w-6 h-6 sm:w-8 sm:h-8 text-text-secondary" />
                     </div>
                   </div>
                 </div>
@@ -223,10 +218,10 @@ export default function HomePage() {
                 className="portfolio-card relative overflow-hidden block cursor-pointer transition-opacity hover:opacity-90"
                 style={{ height: "100%" }}
               >
-                <div className="h-full flex flex-col justify-between p-6">
+                <div className="h-full flex flex-col justify-between p-4 sm:p-6 min-h-[250px] sm:min-h-[auto]">
                   {/* Achievement Image - Top Center */}
                   <div className="text-center flex-1 flex items-center justify-center min-h-0">
-                    <div className="relative w-full max-w-[180px] aspect-square">
+                    <div className="relative w-full max-w-[120px] sm:max-w-[180px] aspect-square">
                       <Image
                         src="/images/achievement.png"
                         alt="Achievement"
@@ -244,33 +239,36 @@ export default function HomePage() {
                       <p className="text-xs uppercase tracking-wider text-text-secondary mb-1">
                         HACKATHONS & COMPETITIONS
                       </p>
-                      <h4 className="text-2xl font-semibold text-text-primary">
+                      <h4 className="text-xl sm:text-2xl font-semibold text-text-primary">
                         Achievements
                       </h4>
                     </div>
 
                     {/* Right Side - Circular Icon with Sparkle */}
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <IoBookmarks className="w-8 h-8 text-text-secondary" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                      <IoBookmarks className="w-6 h-6 sm:w-8 sm:h-8 text-text-secondary" />
                     </div>
                   </div>
                 </div>
               </Link>
 
               {/* Second row - Item 2 - Social Links */}
-              <div className="portfolio-card" style={{ height: "100%" }}>
-                <div className="h-full flex flex-col justify-center items-center gap-6 p-6">
+              <div
+                className="portfolio-card min-h-[250px] sm:min-h-[auto]"
+                style={{ height: "100%" }}
+              >
+                <div className="h-full flex flex-col justify-center items-center gap-4 sm:gap-6 p-4 sm:p-6">
                   {/* Social Media Buttons */}
-                  <div className="grid grid-cols-2 gap-6 w-full justify-items-center portfolio-card">
+                  <div className="grid grid-cols-2 gap-4 sm:gap-6 w-full justify-items-center portfolio-card">
                     {/* X (Twitter) */}
                     <Link
                       href={personalInfo.social.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-24 h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
                       aria-label="X (Twitter)"
                     >
-                      <FaXTwitter className="w-10 h-10 text-text-primary" />
+                      <FaXTwitter className="w-7 h-7 sm:w-10 sm:h-10 text-text-primary" />
                     </Link>
 
                     {/* LinkedIn */}
@@ -278,10 +276,10 @@ export default function HomePage() {
                       href={personalInfo.social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-24 h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
                       aria-label="LinkedIn"
                     >
-                      <FaLinkedin className="w-10 h-10 text-text-primary" />
+                      <FaLinkedin className="w-7 h-7 sm:w-10 sm:h-10 text-text-primary" />
                     </Link>
 
                     {/* LeetCode */}
@@ -289,10 +287,10 @@ export default function HomePage() {
                       href={personalInfo.social.leetcode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-24 h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
                       aria-label="LeetCode"
                     >
-                      <SiLeetcode className="w-10 h-10 text-text-primary" />
+                      <SiLeetcode className="w-7 h-7 sm:w-10 sm:h-10 text-text-primary" />
                     </Link>
 
                     {/* Instagram */}
@@ -300,10 +298,10 @@ export default function HomePage() {
                       href={personalInfo.social.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-24 h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full glass flex items-center justify-center hover:bg-glass-strong transition-all cursor-pointer"
                       aria-label="Instagram"
                     >
-                      <FaInstagram className="w-10 h-10 text-text-primary" />
+                      <FaInstagram className="w-7 h-7 sm:w-10 sm:h-10 text-text-primary" />
                     </Link>
                   </div>
                 </div>

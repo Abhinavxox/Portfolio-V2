@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600"],
@@ -24,15 +25,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
           href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css"
         />
       </head>
-      <body className="bg-eerie-black-1 text-light-gray">
-        {children}
+      <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme');
+                const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                const theme = savedTheme || systemTheme;
+                document.documentElement.classList.add(theme);
+              })();
+            `,
+          }}
+        />
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <script
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

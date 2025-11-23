@@ -32,11 +32,11 @@ export default function ContactPage() {
   return (
     <article className="max-w-4xl mx-auto">
       <header className="mb-8">
-        <h2 className="text-3xl font-semibold text-white-1 mb-2">Contact</h2>
+        <h2 className="text-3xl font-semibold text-text-primary mb-2">Contact</h2>
       </header>
 
       <section className="mb-12">
-        <div className="bg-gradient-jet rounded-xl border border-jet overflow-hidden">
+        <div className="glass rounded-xl border border-glass-border overflow-hidden shadow-1">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1234567890123!2d85.1234567!3d27.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDA3JzI0LjQiTiA4NcKwMDcnMjQuNCJF!5e0!3m2!1sen!2snp!4v1234567890123!5m2!1sen!2snp"
             width="100%"
@@ -51,7 +51,7 @@ export default function ContactPage() {
       </section>
 
       <section>
-        <h3 className="text-2xl font-semibold text-white-1 mb-6">
+        <h3 className="text-2xl font-semibold text-text-primary mb-6">
           Contact Form
         </h3>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -65,7 +65,7 @@ export default function ContactPage() {
               value={formData.fullname}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-eerie-black-2 border border-jet rounded-lg text-white-1 placeholder-light-gray-70 focus:outline-none focus:border-vegas-gold transition-colors"
+              className="w-full px-4 py-3 glass border border-glass-border rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent focus:glass-strong transition-all"
             />
             <motion.input
               initial={{ opacity: 0, x: 20 }}
@@ -76,7 +76,7 @@ export default function ContactPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-eerie-black-2 border border-jet rounded-lg text-white-1 placeholder-light-gray-70 focus:outline-none focus:border-vegas-gold transition-colors"
+              className="w-full px-4 py-3 glass border border-glass-border rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent focus:glass-strong transition-all"
             />
           </div>
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 bg-eerie-black-2 border border-jet rounded-lg text-white-1 placeholder-light-gray-70 focus:outline-none focus:border-vegas-gold transition-colors resize-none"
+            className="w-full px-4 py-3 bg-card border border-border-gray rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:border-accent transition-colors resize-none"
           />
 
           <motion.button
@@ -99,8 +99,8 @@ export default function ContactPage() {
             disabled={!isFormValid}
             className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all ${
               isFormValid
-                ? "bg-gradient-to-r from-orange-yellow-crayola to-vegas-gold text-eerie-black-1 hover:shadow-lg hover:scale-105"
-                : "bg-jet text-light-gray-70 cursor-not-allowed"
+                ? "bg-gradient-accent text-white glass-strong hover:shadow-2 hover:scale-105"
+                : "glass-light text-text-tertiary cursor-not-allowed"
             }`}
           >
             <ion-icon name="paper-plane"></ion-icon>

@@ -18,7 +18,7 @@ export default function PortfolioPage() {
   return (
     <article className="max-w-6xl mx-auto">
       <header className="mb-8">
-        <h2 className="text-3xl font-semibold text-white-1 mb-2">Portfolio</h2>
+        <h2 className="text-3xl font-semibold text-text-primary mb-2">Portfolio</h2>
       </header>
 
       <section>
@@ -27,10 +27,10 @@ export default function PortfolioPage() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeCategory === category
-                  ? "bg-gradient-onyx text-vegas-gold"
-                  : "bg-gradient-jet text-light-gray hover:text-vegas-gold"
+                  ? "bg-gradient-accent text-white glass-strong"
+                  : "glass text-text-secondary hover:text-accent border border-glass-border hover:glass-strong"
               }`}
             >
               {category}
@@ -47,14 +47,14 @@ export default function PortfolioPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ delay: (idx % 6) * 0.05 }}
-                className="group relative overflow-hidden rounded-xl bg-gradient-jet border border-jet hover:border-vegas-gold transition-colors"
+                className="group relative overflow-hidden rounded-xl glass border border-glass-border hover:border-accent hover:shadow-2 hover:glass-strong transition-all"
               >
                 <a href={project.link}>
                   <figure className="relative aspect-video overflow-hidden">
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center justify-center">
                       <ion-icon
                         name="eye-outline"
-                        className="text-4xl text-white-1"
+                        className="text-4xl text-white"
                       ></ion-icon>
                     </div>
                     <Image
@@ -65,10 +65,10 @@ export default function PortfolioPage() {
                     />
                   </figure>
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-white-1 mb-1">
+                    <h3 className="text-lg font-semibold text-text-primary mb-1">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-light-gray-70 capitalize">
+                    <p className="text-sm text-text-secondary capitalize">
                       {project.category}
                     </p>
                   </div>

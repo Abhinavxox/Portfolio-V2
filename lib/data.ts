@@ -1,6 +1,11 @@
 export const personalInfo = {
   name: "Abhinav Pandey",
   title: "AI Research Engineer & Software Developer",
+  description: [
+    "B.Tech. CSE Graduate 2025 Batch",
+    "SDE | AI Research Engineer - Margati Inc.",
+    "Ex-Member - amFOSS",
+  ],
   email: "meronaamabhinav@gmail.com",
   phone: "+977 9841085450",
   birthday: "2 March, 2003",
@@ -12,6 +17,7 @@ export const personalInfo = {
     linkedin: "#",
     twitter: "#",
     leetcode: "#",
+    instagram: "#",
   },
 };
 
@@ -230,4 +236,3 @@ export const blogPosts = [
     link: "#",
   },
 ];
-

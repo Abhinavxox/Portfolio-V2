@@ -58,7 +58,9 @@ export default function HomePage() {
                 {/* Resume Button */}
                 <a
                   href={personalInfo.resume}
-                  download="Abhinav_CV.docx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Abhinav_CV.pdf"
                   className="interactive-element glass px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg flex items-center gap-2 transition-colors text-base sm:text-lg font-medium mb-3 sm:mb-4 w-full justify-center"
                 >
                   <svg

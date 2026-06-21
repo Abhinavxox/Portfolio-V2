@@ -114,8 +114,15 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Explore Me Button */}
-            <div className="flex-shrink-0">
+            {/* Action Buttons */}
+            <div className="flex-shrink-0 flex flex-col gap-3">
+              <a
+                href={personalInfo.resume}
+                download="Abhinav_CV.pdf"
+                className="px-5 py-2 rounded-lg glass-strong text-text-primary font-medium hover:text-black hover:!bg-white transition-all duration-300 text-center"
+              >
+                Download Resume
+              </a>
               <Link href="/fun-me">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
@@ -174,16 +181,28 @@ export default function AboutPage() {
                       className="block"
                     >
                       <div
-                        className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden glass p-2 flex items-center justify-center ${
-                          index === 1 ? "!bg-white" : "bg-black"
-                        }`}
+                        className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden glass flex items-center justify-center ${
+                          "logoBg" in exp && exp.logoBg === "dark"
+                            ? "bg-[#1a1a1a]"
+                            : "!bg-white"
+                        } ${"logoFit" in exp && exp.logoFit === "cover" ? "p-1" : "p-2.5"}`}
                       >
-                        <div className="relative w-full h-full max-w-[60px] max-h-[60px] sm:max-w-[72px] sm:max-h-[72px]">
+                        <div
+                          className={`relative w-full h-full ${
+                            "logoFit" in exp && exp.logoFit === "cover"
+                              ? "max-w-[56px] max-h-[56px] sm:max-w-[68px] sm:max-h-[68px]"
+                              : "max-w-[52px] max-h-[52px] sm:max-w-[64px] sm:max-h-[64px]"
+                          }`}
+                        >
                           <Image
                             src={exp.logo}
                             alt={exp.company}
                             fill
-                            className="object-contain"
+                            className={
+                              "logoFit" in exp && exp.logoFit === "cover"
+                                ? "object-cover rounded-sm"
+                                : "object-contain"
+                            }
                             unoptimized
                           />
                         </div>
@@ -235,6 +254,16 @@ export default function AboutPage() {
                         •
                       </span>
                       <span className="text-text-secondary">{exp.period}</span>
+                      {"location" in exp && exp.location && (
+                        <>
+                          <span className="hidden sm:inline text-text-secondary">
+                            •
+                          </span>
+                          <span className="text-text-secondary">
+                            {exp.location}
+                          </span>
+                        </>
+                      )}
                     </div>
                     <ul className="space-y-2 mt-3">
                       {exp.job.map((item, jobIndex) => (

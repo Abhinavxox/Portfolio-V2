@@ -3,6 +3,7 @@ export const personalInfo = {
   title: "AI Research Engineer & Software Developer",
   description: [
     "B.Tech. CSE Graduate 2025 Batch",
+    "Technical Consultant - DevOps | IIONS Tech Pvt. Ltd.",
     "SDE | AI Research Engineer - Margati Inc.",
     "Ex-Member - amFOSS",
   ],
@@ -12,7 +13,7 @@ export const personalInfo = {
   birthday: "2 March, 2003",
   location: "Banepa-8, Kavrepalanchok, Nepal",
   avatar: "/images/avatar.jpeg",
-  resume: "/docs/Abhinav_CV.docx", // Path to resume file
+  resume: "/Abhinav_CV.pdf",
   social: {
     github: "https://github.com/abhinavxox",
     linkedin: "https://www.linkedin.com/in/itsmeabinavpandey/",
@@ -24,8 +25,8 @@ export const personalInfo = {
 
 export const about = {
   description: [
-    "I'm an AI Research Engineer and Software Developer from Nepal, currently pursuing B.Tech in Computer Science and Engineering (AI) at Amrita Vishwa Vidyapeetham, Kerala. I specialize in developing AI-powered systems, large language models, and scalable software solutions.",
-    "Currently working as Software Development Engineer – 1 at Margati Inc., where I lead a 4-member AI research team developing goal-based communication platforms. My expertise spans from deep learning and reinforcement learning to full-stack development and cloud infrastructure management. I'm passionate about creating innovative solutions that bridge the gap between cutting-edge AI research and practical applications.",
+    "I'm an AI Research Engineer and Software Developer from Nepal, with a B.Tech in Computer Science and Engineering (AI) from Amrita Vishwa Vidyapeetham, Kerala. I specialize in developing AI-powered systems, large language models, and scalable software solutions.",
+    "Currently serving as Technical Consultant – DevOps (Part-Time) at IIONS Tech Pvt. Ltd. in Lalitpur, Nepal, and as Software Development Engineer – 1 at Margati Inc., where I lead a 4-member AI research team developing goal-based communication platforms. My expertise spans deep learning and reinforcement learning to full-stack development and cloud infrastructure management.",
   ],
 };
 
@@ -97,7 +98,7 @@ export const education = [
     period: "2021 - 2025",
     grade: "8.93/10",
     website: "https://www.amrita.edu/",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amrita-vishwa-vidyapeetham-logo.svg/2560px-Amrita-vishwa-vidyapeetham-logo.svg.png",
+    logo: "/images/amrita.svg",
   },
   {
     name: "Uniglobe SS/College",
@@ -111,10 +112,29 @@ export const education = [
 
 export const experience = [
   {
-    company: "Margati",
+    company: "IIONS Tech Pvt. Ltd.",
+    about:
+      "IIONS Technology is a specialized engineering firm focused on building public infrastructures, civic systems, and enterprise-grade platforms.",
+    website: "https://www.iionstech.com.np/",
+    logo: "/images/iions.jpeg",
+    logoBg: "light",
+    logoFit: "cover",
+    role: "Technical Consultant - DevOps (Part-Time, Project-Based)",
+    location: "Lalitpur, Nepal",
+    period: "Mar. 2026 — Present",
+    job: [
+      "Collaborated on the design and maintenance of scalable cloud network infrastructures utilizing AWS and GCP environments.",
+      "Built, optimized, and maintained secure CI/CD pipelines to streamline deployment automation across active testing and staging environments.",
+      "Assisted with the optimization of high-availability backend infrastructures, focusing on low-latency data flow and financial security compliance standards.",
+      "Monitored cloud resource allocation, system metrics, and logging frameworks to ensure architectural efficiency.",
+    ],
+  },
+  {
+    company: "Margati Inc.",
     about: "",
     website: "https://www.margati.com/",
-    logo: "https://www.margati.com/home/logo2.png",
+    logo: "/images/margati.svg",
+    logoBg: "light",
     role: "SDE - 1",
     period: "Mar. 2025 - Present",
     job: [
@@ -128,6 +148,7 @@ export const experience = [
     about: "",
     website: "https://resumeskool.com/",
     logo: "https://resumeskool.com/assets/resume-skool-logo.png",
+    logoBg: "light",
     role: "SDE - Intern",
     period: "Oct. 2023 – July. 2024",
     job: [
@@ -142,6 +163,7 @@ export const experience = [
     about: "India's leading open-source student club",
     website: "https://amfoss.in/",
     logo: "https://amfoss.in/assets/icons/logo_white.svg",
+    logoBg: "dark",
     role: "Member Mentor",
     period: "May 2022 - June 2025",
     job: [
@@ -195,7 +217,7 @@ export const projects = [
       "Pandas",
       "BeautifulSoup",
     ],
-    image: "/images/project.png",
+    image: "/images/margati.svg",
     images: [],
   },
   {
